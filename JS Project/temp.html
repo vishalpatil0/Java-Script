@@ -1,0 +1,21 @@
+<html>
+<title>Yards to Feet Length Converter</title>
+<body>
+
+<h2>Length Converter</h2>
+<p>Type a value in the Yards field to convert the value to Feet:</p>
+
+<p>
+  <label>Yards</label>
+  <input id="inputYards" type="number" placeholder="Yards" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>Feet: <span id="outputFeet"></span></p>
+
+<script>
+function LengthConverter(valNum) 
+{
+  document.getElementById("outputFeet").innerHTML=valNum*3;
+}
+</script>
+</body>
+</html>

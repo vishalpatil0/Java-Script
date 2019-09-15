@@ -1,0 +1,47 @@
+<html>
+<title>Currency Converter</title>
+<body background="frame background.png">
+<center><font face="Times New Roman" color="white">
+<h1>Currency Converter</h1>	
+<p>
+  <label><h3>INR</h3></label>
+  <input id="inputrupees" type="number" placeholder="INR" oninput="CurrencyConverter(this.value)" onchange="CurrencyConverter(this.value)">
+  </p><h3>
+  <p>USD: <span id="outputUSD"></span></p>
+<p>EUR: <span id="outputEUR"></span></p>
+<p>JPY: <span id="outputJPY"></span></p>
+<p>GBP: <span id="outputGBP"></span></p>
+<p>AUD: <span id="outputAUD"></span></p>
+<p>CAD: <span id="outputCAD"></span></p></h3></center></font>
+<script>
+function CurrencyConverter(valNum) 
+{
+  document.getElementById("outputUSD").innerHTML=valNum*0.01;
+  document.getElementById("outputEUR").innerHTML=valNum*0.01;
+  document.getElementById("outputJPY").innerHTML=valNum*1.52;
+  document.getElementById("outputGBP").innerHTML=valNum*0.01;
+  document.getElementById("outputAUD").innerHTML=valNum*0.02;
+  document.getElementById("outputCAD").innerHTML=valNum*0.02;
+}
+</script>
+
+<style>
+.a:hover {
+    opacity: 0.3;
+}
+
+.a-google {
+  background:transparent;
+  color: white;
+}
+body{
+
+	background-image:url("frame background.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	backgroung-size: cover;
+
+}
+</style>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+<head><h1> welcome to unit convertor</h1>
+<title>project</title>
+<script language="javascript" type="text/javascript">
+function Length()
+{
+		with(document.forms.Convert)
+		{
+			a=parseInt(n1.value);
+			b=parseInt(n2.value);
+			c=a/100;
+			n2.value=c;
+			d=b*100;
+			n1.value=d;
+		}
+}
+		</script>
+	</head>
+	<body>
+		<form method="post" name="Convert"><p><center>					
+			centimeters:  <center><input type="text"  placeholder="enter value" name="n1" />   <br></center>
+			meters:        <center><input type="text" placeholder="enter value" name="n2"/><br></center>
+			<input type="button" name="Convert" value="Convert" onClick="Length()"/><br>	
+		</form>
+	</body>
+</html>

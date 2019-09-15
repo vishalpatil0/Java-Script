@@ -1,0 +1,40 @@
+<html>
+<head><h1> welcome to unit convertor</h1>
+<title>project</title>
+<script language="javascript" type="text/javascript">
+function Length()
+{
+		with(document.forms.Convert)
+		{
+			a=parseInt(n1.value)
+			cen=a/10
+			n2.value=cen		  			
+			dec=a/100
+			n3.value=dec
+		
+			
+			b=parseInt(n2.value)
+			mil=b*10
+			n1.value=mil
+			dec=b/10
+			n3.value=dec
+			
+			c=parseInt(n3.value)
+			mil=c*100
+			n1.value=mil
+			cen=c*10
+			n2.value=dec
+		}
+}
+		
+		</script>
+	</head>
+	<body>
+		<form method="post" name="Convert"><p><center>					
+			Milimeter:  <center><input type="text" placeholder="enter value" name="n1" /><br></center>
+			Centimeter: <center><input type="text" placeholder="enter value" name="n2"/><br></center>
+			Decimeter: <center><input type="text"  placeholder="enter value" name="n2"/><br></center>
+			<input type="button" name="Convert" value="Convert" onClick="Length()"/><br>	
+		</form>
+	</body>
+</html>

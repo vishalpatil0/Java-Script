@@ -1,0 +1,29 @@
+<html>
+<title>feet to other Length Converter</title>
+<body background="e4e4e4-2880x1800.png">
+<center>
+<h2>Length Converter</h2>
+<p>Type a value in the feets field to convert the value to other field:</p>
+
+<p>
+  <label>Feet</label>
+  <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+  </p>
+  <p>meters: <span id="outputMeters"></span></p>
+<p>Inches: <span id="outputInches"></span></p>
+<p>Cm: <span id="outputcm"></span></p>
+<p>Yards: <span id="outputYards"></span></p>
+<p>Kilometer: <span id="outputKilometers"></span></p>
+<p>Miles: <span id="outputMiles"></span></p></center>
+<script>
+function LengthConverter(valNum) {
+  document.getElementById("outputMeters").innerHTML=valNum/3.2808;
+  document.getElementById("outputInches").innerHTML=valNum*12;
+  document.getElementById("outputcm").innerHTML=valNum/0.032808;
+  document.getElementById("outputYards").innerHTML=valNum*0.33333;
+  document.getElementById("outputKilometers").innerHTML=valNum/3280.8;
+  document.getElementById("outputMiles").innerHTML=valNum*0.00018939;
+}
+</script>
+</body>
+</html>

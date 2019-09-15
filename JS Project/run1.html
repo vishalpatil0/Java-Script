@@ -1,0 +1,65 @@
+<html>
+<head><h1> welcome to unit convertor</h1>
+<title>project</title>
+<script language="javascript" type="text/javascript">
+function Length()
+{
+		with(document.forms.Convert)
+		{
+			a=parseInt(n1.value);
+			
+			cen=a/10;
+			n2.value=cen;
+			
+			dec=a/100;
+			n3.value=dec;
+			
+			met=a/1000;
+			n4.value=met;
+			
+		    dek=a/10000;
+			n5.value=dek;
+			
+		    hec=a/100000;
+			n6.value=hec;
+			
+			kilo=a/1000000;
+			n7.value=kilo;
+			
+			b=parseInt(n2.value);
+			
+			mil=b*10;
+			n1.value=mil;
+			
+			dec=b/10;
+			n3.value=dec;
+			
+			met=b/100;
+			n4.value=met;
+			
+		    dek=b/1000;
+			n5.value=dek;
+			
+		    hec=b/10000;
+			n6.value=hec;
+			
+			kilo=b/100000;
+			n7.value=kilo;					
+		}
+}
+		
+		</script>
+	</head>
+	<body>
+		<form name="Convert" method="post"><p><center>					
+			Milimeter:  <center><input type="text" placeholder="enter value" name="n1" /><br></center>
+			Centimeter: <center><input type="text" placeholder="enter value" name="n2"/><br></center>
+			Decimeter:  <center><input type="text" placeholder="enter value" name="n3" /><br></center>
+			Meter:      <center><input type="text" placeholder="enter value" name="n4" /><br></center>
+			Dekameter:  <center><input type="text" placeholder="enter value" name="n5" /><br></center>
+			Hectometer: <center><input type="text" placeholder="enter value" name="n6" /><br></center>
+			Kilometer:  <center><input type="text" placeholder="enter value" name="n7" /><br></center>
+			<input type="button" name="Convert" value="Convert" onClick="Length()"/><br>	
+		</form>
+	</body>
+</html>
